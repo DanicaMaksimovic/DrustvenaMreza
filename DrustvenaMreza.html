@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="projekat2.css">
+	<title>Društvena mreža</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="inner-container left-side">
+					<img src="slika2.jpg" class="profile">
+					<p> <b id="username">Mark Zuckerberg</b> </p>
+					<p id="email">markz@gmail.com</p>
+					<button id="editAccount">Izmeni profil</button>
+					<button id="logout">Odjavi se</button>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="inner-container right-side">
+					<form id="postForm">
+						<textarea id="postContent" placeholder="Napisi i objavi ..."></textarea>
+						<button>Objavi</button>
+					</form>
+					<div id="allPostsWrapper"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="izmeni">
+		<form id="formIzmena">
+			<h2>Izmena</h2>
+			<button id="odustani">X</button>
+			<div>
+				<label>E-mail:</label>
+				<input type="email" name="email" id="email2">
+			</div>
+			<div>
+				<label>Lozinka:</label>
+				<input type="password" name="lozinka" id="lozinka2">
+			</div>
+			<div>
+				<button id="izmeniti">Izmeni</button>
+			</div>
+		</form>
+	</div>
+
+
+<script src="kolacici.js"></script>
+<script src="korisnik.js"></script>
+<script src="Post.js"></script>
+<script src="DrustvenaMreza.js"></script>
+</body>
+</html>
